@@ -1,0 +1,78 @@
+
+
+#programInfoDialog
+{
+    position:absolute;
+    left: 105px;
+    top: 139px;
+    width: 815px;
+    height: 490px;
+    z-index: 999;
+    display:none;
+}
+
+#programInfoDialog_background
+{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 815px;
+    height: 490px;
+    background: #151617;
+    opacity: .9;
+    box-shadow: -14px 0px 10px #000000;
+    -webkit-box-shadow: -14px 0px 10px #000000;
+}
+
+#programInfoDialog_title
+{
+    position:absolute;
+    top:20px;
+    left:31px;
+    width: 695px;
+    font-family: 'museo-sans100';
+    font-size: 55px;
+    color: #1CC9AE;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.programInfoDialog_closeButton
+{
+    position:absolute;
+    top: 33px;
+    left: 746px;
+    width: 37px;
+    height: 36px;
+    background-image: url('../../images/pages/doppleganger/recommendations/x_off.png');
+}
+
+.programInfoDialog_closeButton.on
+{
+    background-image: url('../../images/pages/doppleganger/recommendations/x_on.png');
+}
+
+#programInfoDialog_programBoxArt
+{
+    position:absolute;
+    left:31px;
+    top:103px;
+    width: 243px;
+    height: 365px;
+    opacity: 1.0;
+    z-index:9999;
+}
+
+#programInfoDialog_detailsContent
+{
+    position: absolute;
+    left: 290px;
+    top: 103px;
+    width: 493px;
+    height: 365px;
+    font-family: 'times', 'serif';
+    font-size: 20px;
+    font-style:italic;
+    color: #8A8A8A;
+}

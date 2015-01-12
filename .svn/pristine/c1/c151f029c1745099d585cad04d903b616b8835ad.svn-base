@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title>Doppleganger</title>
+        
+        <meta charset="utf-8" />
+        
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/pages/recommendationsPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/pages/sideNavigation.css" />
+        <link rel="stylesheet" type="text/css" href="css/pages/programInfoDialog.css" />
+        
+        <script type="text/javascript" src="js/shared/jquery/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/shared/jquery/jquery.mobile-1.3.1.min.js"></script>
+        <script type="text/javascript" src="js/shared/jquery/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/shared/jquery/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="js/shared/jquery/jquery.iosslider.min.js"></script>
+        <script type="text/javascript" src="js/shared/jquery/jquery.activity-indicator-1.0.0.min.js"></script>
+        <script type="text/javascript" src="js/shared/jingo/jingo-0.8.2-beta.js"></script>
+        <script type="text/javascript" src="js/shared/d3/d3.v3.js"></script>
+        
+        <script type="text/javascript" src="js/shared/cordova-2.7.0.js"></script>
+        <script type="text/javascript" src="js/shared/puremvc/puremvc-1.1.min.js"></script>
+        
+        <script type="text/javascript" src="js/shared/underscore/underscore-min.js"></script>
+        
+        <script type="text/javascript" src="js/shared/view/component/iscroll.js"></script>
+        
+    	<script type="text/javascript" src="js/shared/utils/EventDispatcher.js"></script>
+    	<script type="text/javascript" src="js/shared/utils/EventS.js"></script>
+    	<script type="text/javascript" src="js/shared/utils/Relegate.js"></script>
+        <script type="text/javascript" src="js/shared/utils/Utils.js"></script>
+    	<script type="text/javascript" src="js/shared/utils/MD5.js"></script>
+        <script type="text/javascript" src="js/shared/ApplicationPreferences.js"></script>
+        
+        <script type="text/javascript" src="js/shared/constants.js"></script>
+       
+        <script type="text/javascript">
+            DEVICE_MODE_ENABLED = true;
+        
+            jingo.init(
+                {
+                    repos: 
+                    {
+                        main: './js'
+                    },
+                    verbosity: 'warn',
+                    timeout: 10000
+                });
+            
+            function onBodyLoad() 
+            {
+                if (navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/)) 
+                {
+                    console.log("RUNNING ON DEVICE");
+                    document.addEventListener("deviceready", onDeviceReady, false);
+                } 
+                else 
+                {
+                    console.log("RUNNING OFF DEVICE");
+                    DEVICE_MODE_ENABLED = false;
+                    onDeviceReady(); //this is the browser
+                }
+        	}
+           
+            /* When this function is called, PhoneGap has been initialized and is ready to roll */
+            /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+            see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+            for more details -jm */
+            function onDeviceReady()
+            {
+                jingo.anonymous(
+                {
+                    require: 
+                    [
+                        'doppleganger.DGApp'
+                    ],
+                    exec: function() 
+                    {
+                        try 
+                        {
+                            //PureMVC entry point.
+                            ApplicationFacade.getInstance("DOPPLEGANGER").startup();
+                        } 
+                        catch (e) 
+                        {
+                            alert(e.message);
+                        }
+                    }
+                });
+                
+                //prevents webview from scrolling
+                $('body').on('touchmove', function(evt) {
+                             evt.preventDefault();
+                             });
+                
+                
+            }          
+        </script>
+    </head>
+    <body onload="onBodyLoad()">
+        <div id='shell' style="position: relative; overflow: hidden;">
+        
+            <div id="sideNavigation">
+                <div id="resetButton" class="resetButton actionable"></div>
+                <div class="navSeparator" style="position:absolute; top: 88px;"></div>
+                <div id="refreshButton" class="refreshButton actionable"></div>
+                <div id="gridButton" class="gridButton actionable"></div>
+                <div class="navSeparator" style="position:absolute; top: 371px;"></div>
+                <div id="barGraphButton" class="barGraphButton actionable"></div>
+                <div id="openCloseViewToggle" class="openCloseViewToggle actionable"></div>
+            </div>
+            
+            <!-- Progress Spinner -->
+            <div id="progressSpinner" style="display: none;"></div>
+            
+            <div id="programInfoDialog">
+                <div id="programInfoDialog_background"></div>
+                <div id="programInfoDialog_title"></div>
+                <div id="programInfoDialog_closeButton" class="programInfoDialog_closeButton actionable"></div>
+                <div id="programInfoDialog_programBoxArt"></div>
+                <div id="programInfoDialog_detailsContent">
+                    <div id="programInfoDialog_runtimeYearRating"></div>
+                    <div style="position: absolute;top: 47px;left:0;width: 493px;height: 318px;display:table;">
+                        <div style="display:table-row;">
+                            <div id="programInfoDialog_synopsis"></div>
+                        </div>
+                        <div style="display:table-row;">
+                            <div id="programInfoDialog_castCrew"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="recommendationsPage">
+                <span class="topSectionTitle">PROFILE BUILDER</span>
+                
+                <div id="profileSeedVideoListContainer">
+                    <div id="profileSeedVideoList" class='iosSlider'>
+                        <div id="profileSeedVideoList_wrapper" class='slider'>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="topSectionSeparator"></div>
+                
+                <span id="centerSectionTitle" class="centerSectionTitle"></span>
+                
+                <div id="recommendationsGridContent" style="display: none;">
+                    <div id="recommendationsVideoListContainer">
+                        <div id="recommendationsVideoList" class='iosSlider'>
+                            <div id="recommendationsVideoList_wrapper" class='slider'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="profileVisualizationContent" style="display: none;">
+                    <div id="profileVisualizationChartContainer">
+                        <div id="profileVisualizationChart" class='iosSlider'>
+                            <div id="profileVisualizationChart_wrapper" class='slider'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="searchButton" class="searchButton actionable"></div>
+                <div id="searchArea">
+                    <div id="searchText" class="searchInputField"></div>
+                    <input id="secretInputField" /> <!-- SHH.. DON'T TELL.  Used to make custom caret of search input field -->
+                    <div id="searchSeparator"></div>
+                   <div id="searchResultsList" class="iosSlider">
+                        <div id="searchResultsList_wrapper" class="slider"></div>
+                    </div>
+                </div>
+                
+                <div id="bottomSectionSeparator"></div>
+                
+                <span class="bottomSectionTitle">HISTORY</span>
+                
+                <div id="personalHistoryVideoListContainer">
+                    <div id="personalHistoryVideoList" class='iosSlider'>
+                        <div id="personalHistoryVideoList_wrapper" class='slider'>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <script type="text/template" id="searchResult-template">
+                    <img style="position:absolute;top:22px;height:120px;width:80px;" src="images/pages/doppleganger/recommendations/poster_bg_sml_up_down.png" />
+                    <div class="searchMedia" id="<%= programId %>">
+                        <img 
+                            style="position:absolute;height:120px;width:80px;z-index:99;" 
+                            src="<%= programIconImgSrc ? programIconImgSrc : 'images/pages/doppleganger/recommendations/placeholder_sml_movie.png' %>" 
+                            onerror="
+                                this.src='images/pages/doppleganger/recommendations/placeholder_sml_movie.png';
+                                var parentNode = $(this.parentNode);
+                                parentNode.children('.programTitleOverlay_search').show();" />
+                        <div class="programTitleOverlay_search" style="<%= (isEmptyString(programIconImgSrc)) ? 'display:inline-block' : 'display:none' %>"><%= title %></div>
+                        <div id="<%= programId %>_searchOverlay" style="position:absolute;z-index:999;"></div></div>
+                    <div class="search_movieTitle"><%= title %></div>
+                    <div class="search_movieInfo"><%= info %></div>
+            </script>
+ 
+        </div>
+    </body>
+</html>

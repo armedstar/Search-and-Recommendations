@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EB0D158A-7D22-47E7-A141-279E18E87DC3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Doppleganger</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>bdd8bb25-d495-4122-8ba1-6f5aa763300f++6877</key>
+		<string>http://tul1uesvn01.corporate.local/svn/main/doppleganger</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/Doppleganger.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>bdd8bb25-d495-4122-8ba1-6f5aa763300f++6877</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>bdd8bb25-d495-4122-8ba1-6f5aa763300f++6877</key>
+		<string>http://tul1uesvn01.corporate.local/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://tul1uesvn01.corporate.local/svn/main/doppleganger/trunk/Doppleganger.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>bdd8bb25-d495-4122-8ba1-6f5aa763300f++6877</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>bdd8bb25-d495-4122-8ba1-6f5aa763300f++6877</string>
+			<key>IDESourceControlWCCName</key>
+			<string>doppleganger</string>
+		</dict>
+	</array>
+</dict>
+</plist>

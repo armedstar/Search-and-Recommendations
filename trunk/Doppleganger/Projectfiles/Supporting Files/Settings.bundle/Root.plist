@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Content Types</string>
+			<key>Key</key>
+			<string>rcs_content_types</string>
+			<key>DefaultValue</key>
+			<string>0</string>
+			<key>Values</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>TV and Movies</string>
+				<string>TV Only</string>
+				<string>Movies Only</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of Recommendations</string>
+			<key>Key</key>
+			<string>rcs_num_recs</string>
+			<key>DefaultValue</key>
+			<string>20</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>14</string>
+				<string>16</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 titles</string>
+				<string>14 titles</string>
+				<string>16 titles</string>
+				<string>20 titles</string>
+				<string>30 titles</string>
+				<string>40 titles</string>
+				<string>50 titles</string>
+				<string>60 titles</string>
+				<string>100 titles</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of User Taste Profiles</string>
+			<key>Key</key>
+			<string>rcs_num_user_taste_profiles</string>
+			<key>DefaultValue</key>
+			<string>30</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 tastees</string>
+				<string>20 tastees</string>
+				<string>30 tastees</string>
+				<string>40 tastees</string>
+				<string>50 tastees</string>
+				<string>60 tastees</string>
+				<string>100 tastees</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of Item Taste Profiles</string>
+			<key>Key</key>
+			<string>rcs_num_item_taste_profiles</string>
+			<key>DefaultValue</key>
+			<string>30</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 tastees</string>
+				<string>20 tastees</string>
+				<string>30 tastees</string>
+				<string>40 tastees</string>
+				<string>50 tastees</string>
+				<string>60 tastees</string>
+				<string>100 tastees</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of Similar Content</string>
+			<key>Key</key>
+			<string>rcs_num_similar</string>
+			<key>DefaultValue</key>
+			<string>20</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>14</string>
+				<string>16</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 titles</string>
+				<string>14 titles</string>
+				<string>16 titles</string>
+				<string>20 titles</string>
+				<string>30 titles</string>
+				<string>40 titles</string>
+				<string>50 titles</string>
+				<string>60 titles</string>
+				<string>100 titles</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of Search Suggestions</string>
+			<key>Key</key>
+			<string>rcs_num_search_suggestions</string>
+			<key>DefaultValue</key>
+			<string>10</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 titles</string>
+				<string>20 titles</string>
+				<string>30 titles</string>
+				<string>40 titles</string>
+				<string>50 titles</string>
+				<string>60 titles</string>
+				<string>100 titles</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of Search Results</string>
+			<key>Key</key>
+			<string>rcs_num_search_results</string>
+			<key>DefaultValue</key>
+			<string>10</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 titles</string>
+				<string>20 titles</string>
+				<string>30 titles</string>
+				<string>40 titles</string>
+				<string>50 titles</string>
+				<string>60 titles</string>
+				<string>100 titles</string>
+			</array>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Num of History Events</string>
+			<key>Key</key>
+			<string>rcs_num_content_preference_events</string>
+			<key>DefaultValue</key>
+			<string>20</string>
+			<key>Values</key>
+			<array>
+				<string>10</string>
+				<string>20</string>
+				<string>30</string>
+				<string>40</string>
+				<string>50</string>
+				<string>60</string>
+				<string>100</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>10 titles</string>
+				<string>20 titles</string>
+				<string>30 titles</string>
+				<string>40 titles</string>
+				<string>50 titles</string>
+				<string>60 titles</string>
+				<string>100 titles</string>
+			</array>
+		</dict>
+		<dict>
+			<key>AutocapitalizationType</key>
+			<string>None</string>
+			<key>AutocorrectionType</key>
+			<string>No</string>
+			<key>DefaultValue</key>
+			<string></string>
+			<key>IsSecure</key>
+			<false/>
+			<key>Key</key>
+			<string>rcs_user_id</string>
+			<key>KeyboardType</key>
+			<string>Alphabet</string>
+			<key>Title</key>
+			<string>RCS User ID</string>
+			<key>Type</key>
+			<string>PSTextFieldSpecifier</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Root</string>
+</dict>
+</plist>

@@ -1,0 +1,113 @@
+#sideNavigation
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 55px;
+    height: 768px;
+    background-color: #1C1C1D;
+    z-index:9;
+}
+
+.gridButton
+{
+    position: absolute;
+    left: 10px;
+    top: 321px;
+    height: 33px;
+    width: 33px;
+    background-image: url("../../images/pages/doppleganger/sideNavigation/grid_Off.png");
+}
+
+.gridButton.active
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/grid_Active.png");
+}
+
+.gridButton.on
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/grid_On.png");
+}
+
+.barGraphButton
+{
+    position: absolute;
+    left: 10px;
+    top: 390px;
+    height: 33px;
+    width: 33px;
+    background-image: url("../../images/pages/doppleganger/sideNavigation/bars_Off.png");
+}
+
+.barGraphButton.active
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/bars_Active.png");
+}
+
+.barGraphButton.on
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/bars_On.png")
+}
+
+.openCloseViewToggle
+{
+    position: absolute;
+    left: 10px;
+    top: 717px;
+    height: 33px;
+    width: 33px;
+    background-image: url("../../images/pages/doppleganger/sideNavigation/full_Off.png");
+}
+
+.openCloseViewToggle.on
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/full_On.png");
+}
+
+.openCloseViewToggle.open
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/close_Off.png");
+}
+
+.openCloseViewToggle.open.on
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/close_On.png");
+}
+
+.resetButton
+{
+    position: absolute;
+    left: 10px;
+    top: 36px;
+    height: 34px;
+    width: 33px;
+    background-image: url("../../images/pages/doppleganger/sideNavigation/reset_Off.png");
+}
+
+.resetButton.on
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/reset_On.png");
+}
+
+.refreshButton
+{
+    position: absolute;
+    left: 10px;
+    top: 109px;
+    height: 33px;
+    width: 33px;
+    background-image: url("../../images/pages/doppleganger/sideNavigation/refresh_Off.png");
+}
+
+.refreshButton.on
+{
+    background-image: url("../../images/pages/doppleganger/sideNavigation/refresh_On.png");
+}
+
+.navSeparator
+{
+    height: 1px;
+    width: 43px;
+    left: 6px;
+    background-color: #000000;
+}

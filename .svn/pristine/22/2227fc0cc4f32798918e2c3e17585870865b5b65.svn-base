@@ -1,0 +1,543 @@
+
+#personalHistoryVideoListContainer
+{
+    position:absolute; 
+    width:937px; 
+    height:202px; 
+    top:860px;
+    left:32px;
+    color: #fff;
+}
+
+#personalHistoryVideoList
+{
+    width: 937px;
+    height: 202px;
+}
+
+
+#recommendationsPage
+{
+    position:absolute;
+    top:0;
+    left:55px;
+    width:969px;
+    height:768px;
+    display:none;
+    padding: 0px;
+}
+
+#topSectionSeparator
+{
+    position:absolute;
+    width: 882px;
+    height: 8px;
+    top: 280px;
+    left:32px;
+    background-color: #1C1C1D;
+}
+
+#bottomSectionSeparator
+{
+    position:absolute;
+    width: 882px;
+    height: 8px;
+    top: 818px;
+    left:32px;
+    background-color: #1C1C1D;
+}
+
+#profileSeedVideoListContainer
+{
+    position:absolute; 
+    width:937px; 
+    height:202px; 
+    top:65px; 
+    left:32px;
+}
+
+#profileSeedVideoList
+{
+    width: 937px;
+    height: 202px;
+}
+
+
+#recommendationsVideoListContainer
+{
+    position:absolute;
+    width: 937px;
+    height: 320px;
+    top: 392px;
+    left: 32px;
+}
+
+#recommendationsVideoList
+{
+    width: 937px;
+    height: 320px;
+}
+
+.recommendationsTile
+{
+    width: 100px;
+    height: 320px;
+    margin: 0 10px;
+}
+
+.large_programTitleOverlay
+{
+    position:absolute;
+    z-index:999;
+    top: 20px;
+    left: 20px;
+    font-family: 'museo-sans300';
+    font-size: 26px;
+    color:#474747;
+}
+
+.programTitleOverlay
+{
+    position:absolute;
+    top:5px;
+    left:7px;
+    width: 87px;
+    z-index:999;
+    font-family: 'museo-sans300';
+    font-size: 16px;
+    color:#474747;
+}
+
+.programTitleOverlay_search
+{
+    position:absolute;
+    top:5px;
+    left:5px;
+    width: 70px;
+    z-index:999;
+    font-family: 'museo-sans300';
+    font-size: 16px;
+    color:#474747;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.recTile_top
+{
+    position:absolute;
+    z-index:99;
+}
+
+.recTile_bottom
+{
+    position:absolute;
+    top: 170px;
+    z-index:99;
+}
+
+.draggable
+{
+    width: 100px;
+    height: 202px;
+    margin: 0 10px;
+}
+
+.seedTileOverlay
+{
+    position:absolute;
+    top: -26px;
+}
+
+.iosSlider .slider
+{
+    width: 100%;
+    height: 100%;
+}
+
+.iosSlider .slider img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 150px;
+}
+
+.topSectionTitle
+{
+    position: absolute;
+    top: 36px;
+    left: 32px;
+    font-family: 'museo-sans100';
+    font-size: 26px;
+    color: #1CC9AE;
+    padding: 0px;
+}
+
+.centerSectionTitle
+{
+    position: absolute;
+    top: 310px;
+    left: 32px;
+    font-family: 'museo-sans100';
+    font-size: 55px;
+    color: #1CC9AE;
+    padding: 0px;
+}
+
+.bottomSectionTitle
+{
+    position: absolute;
+    top: 844px;
+    left: 32px;
+    font-family: 'museo-sans100';
+    font-size: 26px;
+    color: #1CC9AE;
+    padding: 0px;
+}
+
+#searchAreaWrapper
+{
+    position: absolute;
+    left: 578px;
+    width: 392px;
+    top: 0px;
+    height: 768px;
+}
+
+#searchArea
+{
+    position: absolute;
+    left: 846px;
+    top: 0px;
+    width: 392px;
+    height: 768px;
+    background: #151617;
+    opacity: .9;
+    z-index:99;
+    display: none;
+}
+
+.searchButton
+{
+    position: absolute;
+    top: 32px;
+    left: 868px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../images/pages/doppleganger/recommendations/search_off.png');
+    z-index:999;
+}
+
+.searchButton.active
+{
+    background-image: url('../../images/pages/doppleganger/recommendations/search_Active.png');
+}
+
+.searchButton.on
+{
+    background-image: url('../../images/pages/doppleganger/recommendations/search_on.png');
+}
+
+#searchText
+{
+    position: absolute;
+    left: 60px;
+    top: 32px;
+    width: 309px;
+}
+
+#secretInputField
+{
+    position: absolute;
+    top: -100px;
+    left: 60px;
+    width: 50px;
+}
+
+.searchInputField
+{
+    font-family: 'museo-sans300';
+    font-size: 26px;
+    text-transform: uppercase;
+    background: #151617;
+    opacity: .9;
+    border: 0px;
+    color: #FFFFFF;
+}
+
+#searchSeparator
+{
+    position:absolute;
+    left:22px;
+    top:62px;
+    height:1px;
+    width:347px;
+    background-color:#535454;
+}
+
+#searchResultsList
+{
+    position:absolute;
+    top: 82px;
+    left: 22px;
+    width: 347px;
+    height: 768px;
+}
+
+.searchSuggestionItem
+{
+    font-family: 'museo-sans300';
+    font-size: 26px;
+    color: #1CC9AE;
+    width: 347px;
+    height: 68px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchSuggestionItem.on
+{
+    color: #FFFFFF;
+}
+
+
+.searchResultItem
+{
+    position: absolute;
+    width: 347px;
+    height: 164px;
+    border-bottom: 1px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.media, .historyMedia
+{
+    background-image: url('../../images/pages/doppleganger/recommendations/placeholder_movie.png');
+}
+
+.historyItemSelected
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 147px;
+    width: 97px;
+    border: 3px solid #FFFFFF;
+    z-index:99999;
+}
+
+.searchMedia
+{
+    position:absolute;
+    top:22px;
+    height:120px;
+    width:80px;
+    z-index:99;
+    background-image: url('../../images/pages/doppleganger/recommendations/placeholder_sml_movie.png');
+}
+
+.search_movieTitle
+{
+    position:absolute;
+    top:22px;
+    left:91px;
+    width: 256px;
+    font-family: 'museo-sans500';
+    font-size: 26px;
+    color: #1CC9AE;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.search_movieInfo
+{
+    position:absolute;
+    top: 47px;
+    left: 91px;
+    width: 256px;
+    height: 146px;
+    font-family: 'times', 'serif';
+    font-size: 15px;
+    color: #8A8A8A;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.search_upDownImg
+{
+    width: 80px;
+    height: 120px;
+}
+
+.search_programIconImg
+{
+    width: 80px;
+    height: 120px;
+}
+
+/*style for bar graph*/
+
+#profileVisualizationChartContainer
+{
+    position:absolute;
+    width: 937px;
+    height: 400px;
+    top: 402px;
+    left: 32px;
+}
+
+.visualizationShim
+{
+    width: 30px;
+    height: 400px;
+}
+
+#profileVisualizationChart
+{
+    width: 937px;
+    height: 400px;
+}
+
+#profileVisualizationContent_allTasteProfileGraphs
+{
+    height: 400px;
+}
+
+#profileVisualizationContent_itemTasteProfileGraph
+{
+    /*margin-top:-400px;*/
+}
+
+.tasteeGraphBar_user
+{
+    display: inline-block; 
+    width: 24px; 
+    height: 75px;  
+    margin:0 12px 0 0;
+    position: absolute;
+}
+
+.tasteeGraphBar_item
+{
+    display: inline-block; 
+    width: 12px; 
+    height: 75px;  
+    margin:0 24px 0 0;
+    position: absolute;
+}
+
+.tasteeGraphBar_background 
+{
+    opacity: .55;
+}
+
+.tasteeGraphBar_genre
+{
+    background-color:#FF9600; 
+}
+
+.tasteeGraphBar_subject
+{
+    background-color:#FFFC00; 
+}
+
+.tasteeGraphBar_style
+{
+    background-color:#72FF00; 
+}
+
+.tasteeGraphBar_theme
+{
+    background-color:#00FFF0; 
+}
+
+.tasteeGraphBar_quality
+{
+    background-color:#7E00FF; 
+}
+
+.tasteeGraphBar_mood
+{
+    background-color:#F600FF; 
+}
+
+.tasteeGraphBar_misc
+{
+    background-color:#FF005A; 
+}
+
+#tasteeNames
+{
+    font-size:15px; 
+    color: #00FFF0; 
+    position:absolute; 
+    font-family:'museo-sans100', sans-serif;
+    width:24px; 
+    height:400px;
+}
+
+#tasteeNames #tasteeNameText
+{
+    -webkit-transform: rotate(-90deg);
+    width: 400px; 
+    margin: 220px -190px;
+    text-align: right;
+}
+
+#tasteeCategoryNames
+{
+    font-size:30px;
+    position:absolute; 
+    font-family:'museo-sans100', sans-serif;
+    width:24px; 
+    height:400px;
+}
+
+#tasteeCategoryNames #tasteeCategoryNameText
+{
+    -webkit-transform: rotate(-90deg);
+    width: 400px; 
+    margin: 220px -190px;
+    text-align: left;
+}
+
+.tasteeCategoryBarData_genre
+{
+    color:#FF9600; 
+}
+
+.tasteeCategoryBarData_subject
+{
+    color:#FFFC00; 
+}
+
+.tasteeCategoryBarData_style
+{
+    color:#72FF00; 
+}
+
+.tasteeCategoryBarData_theme
+{
+    color:#00FFF0; 
+}
+
+.tasteeCategoryBarData_quality
+{
+    color:#7E00FF; 
+}
+
+.tasteeCategoryBarData_mood
+{
+    color:#F600FF; 
+}
+
+.tasteeCategoryBarData_misc
+{
+    color:#FF005A; 
+}
